@@ -9,6 +9,7 @@ import com.example.jwt.demo.model.AuthToken;
 import com.example.jwt.demo.model.enums.UserRole;
 import com.example.jwt.demo.repository.UserRepository;
 import com.example.jwt.demo.service.AppUserService;
+import com.example.jwt.demo.util.ErrorResponse;
 import com.example.jwt.demo.util.ResponseModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +37,7 @@ public class AppUserServiceImpl implements AppUserService {
     public ResponseEntity<?> registerUser(AppUserDTO appUserDTO) {
         Optional<AppUser> userByEmail = userRepository.getUserByEmail(appUserDTO.getUser_email());
         if (userByEmail.isPresent()) {
-            return new ResponseEntity<>("Existing user", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new ErrorResponse("Existing user"), HttpStatus.BAD_REQUEST);
         }
         try {
             userRepository.save(dTOToEntity(appUserDTO));
