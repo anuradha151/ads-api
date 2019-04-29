@@ -1,14 +1,21 @@
 package com.example.jwt.demo.service.impl;
 
 import com.example.jwt.demo.dto.AdsDTO;
+import com.example.jwt.demo.exception.CustomException;
 import com.example.jwt.demo.model.AdsDetail;
 import com.example.jwt.demo.repository.AdsRepository;
 import com.example.jwt.demo.service.AdsService;
+import com.example.jwt.demo.util.ResponseModel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
 public class AdsServiceImpl implements AdsService {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(AdsServiceImpl.class);
 
     private final AdsRepository adsRepository;
 
@@ -18,8 +25,13 @@ public class AdsServiceImpl implements AdsService {
 
     @Override
     public ResponseEntity<?> save(AdsDTO adsDTO) {
-        AdsDetail save = adsRepository.save(dTOToEntity(adsDTO));
-        return new ResponseEntity<>()
+        try {
+            adsRepository.save(dTOToEntity(adsDTO));
+            return new ResponseEntity<>(new ResponseModel(HttpStatus.OK.value(), "Ad Details Added", true), HttpStatus.OK);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new CustomException(e.getMessage());
+        }
     }
 
     @Override
