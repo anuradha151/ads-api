@@ -17,7 +17,7 @@ public class AdsDetail {
     private String ad_title;
     private String ad_description;
     private String ad_city;
-    private String ad_price;
+    private double ad_price;
     private String ad_image;
     private String ad_user_email;
     private String ad_user_unique_id;
@@ -70,11 +70,11 @@ public class AdsDetail {
         this.ad_city = ad_city;
     }
 
-    public String getAd_price() {
+    public double getAd_price() {
         return ad_price;
     }
 
-    public void setAd_price(String ad_price) {
+    public void setAd_price(double ad_price) {
         this.ad_price = ad_price;
     }
 

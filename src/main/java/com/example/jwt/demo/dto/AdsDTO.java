@@ -1,36 +1,20 @@
 package com.example.jwt.demo.dto;
 
 public class AdsDTO {
+    private int ad_detail_id;
     private String ad_category_name;
     private String ad_item_name;
     private String ad_item_condition;
     private String ad_title;
     private String ad_description;
     private String ad_city;
-    private String ad_price;
+    private double ad_price;
     private String ad_image;
     private String ad_user_email;
     private String ad_user_unique_id;
     private String ad_user_contact_no;
 
     public AdsDTO() {
-    }
-
-    @Override
-    public String toString() {
-        return "AdsDTO{" + "\n" +
-                "ad_category_name='" + getAd_category_name() + '\'' + "\n" +
-                ", ad_item_name='" + getAd_item_name() + '\'' + "\n" +
-                ", ad_item_condition='" + getAd_item_condition() + '\'' + "\n" +
-                ", ad_title='" + getAd_title() + '\'' + "\n" +
-                ", ad_description='" + getAd_description() + '\'' + "\n" +
-                ", ad_city='" + getAd_city() + '\'' + "\n" +
-                ", ad_price='" + getAd_price() + '\'' + "\n" +
-                ", ad_image='" + getAd_image() + '\'' + "\n" +
-                ", ad_user_email='" + getAd_user_email() + '\'' + "\n" +
-                ", ad_user_unique_id='" + getAd_user_unique_id() + '\'' + "\n" +
-                ", ad_user_contact_no='" + getAd_user_contact_no() + '\'' + "\n" +
-                '}';
     }
 
     public String getAd_category_name() {
@@ -81,11 +65,11 @@ public class AdsDTO {
         this.ad_city = ad_city;
     }
 
-    public String getAd_price() {
+    public double getAd_price() {
         return ad_price;
     }
 
-    public void setAd_price(String ad_price) {
+    public void setAd_price(double ad_price) {
         this.ad_price = ad_price;
     }
 
@@ -119,5 +103,13 @@ public class AdsDTO {
 
     public void setAd_user_contact_no(String ad_user_contact_no) {
         this.ad_user_contact_no = ad_user_contact_no;
+    }
+
+    public int getAd_detail_id() {
+        return ad_detail_id;
+    }
+
+    public void setAd_detail_id(int ad_detail_id) {
+        this.ad_detail_id = ad_detail_id;
     }
 }
