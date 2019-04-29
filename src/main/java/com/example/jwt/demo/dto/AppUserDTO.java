@@ -42,7 +42,6 @@ public class AppUserDTO {
                 "user_id=" + getUser_id() + "\n" +
                 ", user_name='" + getUser_name() + '\'' + "\n" +
                 ", user_email='" + getUser_email() + '\'' + "\n" +
-                ", user_password='" + getUser_password() + '\'' + "\n" +
                 ", user_role='" + getUser_role() + '\'' + "\n" +
                 ", refresh_token='" + getRefresh_token() + '\'' + "\n" +
                 '}';

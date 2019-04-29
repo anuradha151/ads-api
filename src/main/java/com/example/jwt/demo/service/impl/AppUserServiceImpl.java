@@ -9,6 +9,7 @@ import com.example.jwt.demo.model.AuthToken;
 import com.example.jwt.demo.model.enums.UserRole;
 import com.example.jwt.demo.repository.UserRepository;
 import com.example.jwt.demo.service.AppUserService;
+import com.example.jwt.demo.util.ResponseModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -38,13 +39,10 @@ public class AppUserServiceImpl implements AppUserService {
             return new ResponseEntity<>("Existing user", HttpStatus.BAD_REQUEST);
         }
         try {
-            AppUser appUser = dTOToEntity(appUserDTO);
-            if (userRepository.save(appUser) != null) {
-                return new ResponseEntity<>("User added successfully", HttpStatus.CREATED);
-            } else {
-                return new ResponseEntity<>("Failed to save user", HttpStatus.BAD_REQUEST);
-            }
+            userRepository.save(dTOToEntity(appUserDTO));
+            return new ResponseEntity<>(new ResponseModel(HttpStatus.OK.value(), "User added successfully", true), HttpStatus.OK);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new CustomException("Failed to save user");
         }
     }
