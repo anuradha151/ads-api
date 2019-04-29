@@ -3,7 +3,7 @@ package com.example.jwt.demo.dto;
 public class AdsDTO {
     private String ad_category_name;
     private String ad_item_name;
-    private String ad_item_condiiton;
+    private String ad_item_condition;
     private String ad_title;
     private String ad_description;
     private String ad_city;
@@ -21,7 +21,7 @@ public class AdsDTO {
         return "AdsDTO{" + "\n" +
                 "ad_category_name='" + getAd_category_name() + '\'' + "\n" +
                 ", ad_item_name='" + getAd_item_name() + '\'' + "\n" +
-                ", ad_item_condiiton='" + getAd_item_condiiton() + '\'' + "\n" +
+                ", ad_item_condition='" + getAd_item_condition() + '\'' + "\n" +
                 ", ad_title='" + getAd_title() + '\'' + "\n" +
                 ", ad_description='" + getAd_description() + '\'' + "\n" +
                 ", ad_city='" + getAd_city() + '\'' + "\n" +
@@ -49,12 +49,12 @@ public class AdsDTO {
         this.ad_item_name = ad_item_name;
     }
 
-    public String getAd_item_condiiton() {
-        return ad_item_condiiton;
+    public String getAd_item_condition() {
+        return ad_item_condition;
     }
 
-    public void setAd_item_condiiton(String ad_item_condiiton) {
-        this.ad_item_condiiton = ad_item_condiiton;
+    public void setAd_item_condition(String ad_item_condition) {
+        this.ad_item_condition = ad_item_condition;
     }
 
     public String getAd_title() {

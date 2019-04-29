@@ -19,8 +19,7 @@ public class AppUser {
     @Column(nullable = false)
     private String user_password;
     @Column
-    private
-    String contact_no;
+    private String contact_no;
     @Column(columnDefinition = "Varchar(100) default 'Admin'")
     private String user_role = "Admin";
     @JsonIgnore
