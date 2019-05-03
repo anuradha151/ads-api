@@ -55,9 +55,6 @@ public class AdsServiceImpl implements AdsService {
             adsDetail.setAd_city(adsDTO.getAd_city());
             adsDetail.setAd_price(adsDTO.getAd_price());
             adsDetail.setAd_image(adsDTO.getAd_image());
-            adsDetail.setAd_user_email(adsDTO.getAd_user_email());
-            adsDetail.setAd_user_unique_id(adsDTO.getAd_user_unique_id());
-            adsDetail.setAd_user_contact_no(adsDTO.getAd_user_contact_no());
             adsRepository.save(adsDetail);
             return new ResponseEntity<>(new ResponseModel(HttpStatus.OK.value(), "Ad updated successfully", true), HttpStatus.OK);
         } catch (Exception e) {
@@ -88,12 +85,20 @@ public class AdsServiceImpl implements AdsService {
     public ResponseEntity<?> findAll() {
         try {
             List<AdsDetail> all = adsRepository.findAll(false);
-            List<AdsDTO> adsDTOS = new ArrayList<>();
-            if (!all.isEmpty()) {
-                for (AdsDetail adsDetail : all) {
-                    adsDTOS.add(entityToDTO(adsDetail));
-                }
-            }
+            List<AdsDTO> adsDTOS = toDTOList(all);
+            return new ResponseEntity<>(adsDTOS, HttpStatus.OK);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new CustomException(e.getMessage());
+        }
+
+    }
+
+    @Override
+    public ResponseEntity<?> findAll(String ad_category_name) {
+        try {
+            List<AdsDetail> all = adsRepository.findAll(ad_category_name, false);
+            List<AdsDTO> adsDTOS = toDTOList(all);
             return new ResponseEntity<>(adsDTOS, HttpStatus.OK);
         } catch (Exception e) {
             e.printStackTrace();
@@ -105,7 +110,7 @@ public class AdsServiceImpl implements AdsService {
     @Override
     public ResponseEntity<?> findById(int ad_detail_id) {
         try {
-            Optional<AdsDetail> byId = adsRepository.findById(ad_detail_id,false);
+            Optional<AdsDetail> byId = adsRepository.findById(ad_detail_id, false);
             return byId.<ResponseEntity<?>>map(adsDetail -> new ResponseEntity<>(entityToDTO(adsDetail), HttpStatus.OK)).orElseGet(() -> new ResponseEntity<>(new ErrorResponse("Not a existing ads detail. Please provide existing details"), HttpStatus.BAD_REQUEST));
         } catch (Exception e) {
             e.printStackTrace();
@@ -125,9 +130,6 @@ public class AdsServiceImpl implements AdsService {
             adsDetail.setAd_city(adsDTO.getAd_city());
             adsDetail.setAd_price(adsDTO.getAd_price());
             adsDetail.setAd_image(adsDTO.getAd_image());
-            adsDetail.setAd_user_email(adsDTO.getAd_user_email());
-            adsDetail.setAd_user_unique_id(adsDTO.getAd_user_unique_id());
-            adsDetail.setAd_user_contact_no(adsDTO.getAd_user_contact_no());
             return adsDetail;
         } catch (Exception e) {
             e.printStackTrace();
@@ -148,14 +150,20 @@ public class AdsServiceImpl implements AdsService {
             adsDetail.setAd_city(adsDTO.getAd_city());
             adsDetail.setAd_price(adsDTO.getAd_price());
             adsDetail.setAd_image(adsDTO.getAd_image());
-            adsDetail.setAd_user_email(adsDTO.getAd_user_email());
-            adsDetail.setAd_user_unique_id(adsDTO.getAd_user_unique_id());
-            adsDetail.setAd_user_contact_no(adsDTO.getAd_user_contact_no());
             return adsDetail;
         } catch (Exception e) {
             e.printStackTrace();
             throw new CustomException(e.getMessage());
         }
+    }
 
+    private List<AdsDTO> toDTOList(List<AdsDetail> adsDetails) {
+        List<AdsDTO> adsDTOS = new ArrayList<>();
+        if (!adsDetails.isEmpty()) {
+            for (AdsDetail adsDetail : adsDetails) {
+                adsDTOS.add(entityToDTO(adsDetail));
+            }
+        }
+        return adsDTOS;
     }
 }

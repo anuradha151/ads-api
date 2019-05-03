@@ -13,6 +13,8 @@ public interface AdsService {
 
     ResponseEntity<?> findAll();
 
+    ResponseEntity<?> findAll(String ad_category_name);
+
     ResponseEntity<?> findById(int ad_detail_id);
 
 }

@@ -23,8 +23,13 @@ public class AdsController {
     }
 
     @GetMapping("all")
-    public ResponseEntity<?> getAll() {
+    public ResponseEntity<?> findAll() {
         return adsService.findAll();
+    }
+
+    @GetMapping("all_by_category")
+    public ResponseEntity<?> findAll(@Param("ad_category_name") String ad_category_name) {
+        return adsService.findAll(ad_category_name);
     }
 
     @GetMapping("byId")

@@ -20,8 +20,8 @@ public class AppUser {
     private String user_password;
     @Column
     private String contact_no;
-    @Column(columnDefinition = "Varchar(100) default 'Admin'")
-    private String user_role = "Admin";
+    @Column(columnDefinition = "Varchar(100) default 'ADMIN'")
+    private String user_role = "ADMIN";
     @JsonIgnore
     private String refresh_token;
 

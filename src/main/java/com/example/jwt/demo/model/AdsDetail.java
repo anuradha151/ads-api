@@ -1,5 +1,6 @@
 package com.example.jwt.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -19,11 +20,13 @@ public class AdsDetail {
     private String ad_city;
     private double ad_price;
     private String ad_image;
-    private String ad_user_email;
-    private String ad_user_unique_id;
-    private String ad_user_contact_no;
     @Column(columnDefinition = "tinyint(1) default 1", nullable = false)
     private boolean deleted;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "user_id", nullable = false)
+    @JsonIgnore
+    private AppUser appUser;
 
     public AdsDetail() {
     }
@@ -86,29 +89,6 @@ public class AdsDetail {
         this.ad_image = ad_image;
     }
 
-    public String getAd_user_email() {
-        return ad_user_email;
-    }
-
-    public void setAd_user_email(String ad_user_email) {
-        this.ad_user_email = ad_user_email;
-    }
-
-    public String getAd_user_unique_id() {
-        return ad_user_unique_id;
-    }
-
-    public void setAd_user_unique_id(String ad_user_unique_id) {
-        this.ad_user_unique_id = ad_user_unique_id;
-    }
-
-    public String getAd_user_contact_no() {
-        return ad_user_contact_no;
-    }
-
-    public void setAd_user_contact_no(String ad_user_contact_no) {
-        this.ad_user_contact_no = ad_user_contact_no;
-    }
 
     public int getAd_detail_id() {
         return ad_detail_id;
@@ -132,5 +112,13 @@ public class AdsDetail {
 
     public void setDeleted(boolean deleted) {
         this.deleted = deleted;
+    }
+
+    public AppUser getAppUser() {
+        return appUser;
+    }
+
+    public void setAppUser(AppUser appUser) {
+        this.appUser = appUser;
     }
 }
