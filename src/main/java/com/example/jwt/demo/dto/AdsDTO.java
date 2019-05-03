@@ -10,7 +10,7 @@ public class AdsDTO {
     private String ad_city;
     private double ad_price;
     private String ad_image;
-    private AppUserDTO appUserDTO;
+    private AppUserDTO user;
 
     public AdsDTO() {
     }
@@ -89,11 +89,11 @@ public class AdsDTO {
         this.ad_detail_id = ad_detail_id;
     }
 
-    public AppUserDTO getAppUserDTO() {
-        return appUserDTO;
+    public AppUserDTO getUser() {
+        return user;
     }
 
-    public void setAppUserDTO(AppUserDTO appUserDTO) {
-        this.appUserDTO = appUserDTO;
+    public void setUser(AppUserDTO user) {
+        this.user = user;
     }
 }

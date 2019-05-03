@@ -165,7 +165,7 @@ public class AdsServiceImpl implements AdsService {
             appUserDTO.setUser_name(appUser.getUser_name());
             appUserDTO.setUser_email(appUser.getUser_email());
             appUserDTO.setContact_no(appUser.getContact_no());
-
+            adsDTO.setUser(appUserDTO);
             return adsDTO;
         } catch (Exception e) {
             e.printStackTrace();
