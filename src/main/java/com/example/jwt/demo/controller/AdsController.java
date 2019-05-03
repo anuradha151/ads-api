@@ -24,6 +24,17 @@ public class AdsController {
         return adsService.save(adsDTO, principal);
     }
 
+
+    @PutMapping("update")
+    public ResponseEntity<?> update(@RequestBody AdsDTO adsDTO) {
+        return adsService.update(adsDTO);
+    }
+
+    @DeleteMapping("remove")
+    public ResponseEntity<?> remove(@Param("id") int id) {
+        return adsService.remove(id);
+    }
+
     @GetMapping("all")
     public ResponseEntity<?> findAll() {
         return adsService.findAll();
@@ -39,15 +50,9 @@ public class AdsController {
         return adsService.findById(id);
     }
 
-    @PutMapping("update")
-    public ResponseEntity<?> update(@RequestBody AdsDTO adsDTO) {
-        return adsService.update(adsDTO);
+    @GetMapping("myAds")
+    public ResponseEntity<?> findAll(Principal principal) {
+        return adsService.findAll(principal);
     }
-
-    @DeleteMapping("remove")
-    public ResponseEntity<?> remove(@Param("id") int id) {
-        return adsService.remove(id);
-    }
-
 
 }

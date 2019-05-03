@@ -13,6 +13,9 @@ public interface AdsRepository extends JpaRepository<AdsDetail, Integer> {
     List<AdsDetail> findAll(boolean deleted);
 
 
+    @Query("SELECT a FROM AdsDetail a WHERE a.appUser.user_id = ?1 AND a.deleted = ?2")
+    List<AdsDetail> findAll(int user_id, boolean deleted);
+
     @Query("SELECT a FROM AdsDetail a WHERE a.ad_category_name = ?1 AND  a.deleted = ?2")
     List<AdsDetail> findAll(String ad_category_name, boolean deleted);
 

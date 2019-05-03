@@ -104,11 +104,22 @@ public class AdsServiceImpl implements AdsService {
     }
 
     @Override
+    public ResponseEntity<?> findAll(Principal principal) {
+        try {
+            List<AdsDetail> all = adsRepository.findAll(Integer.parseInt(principal.getName()), false);
+            return new ResponseEntity<>(toDTOList(all), HttpStatus.OK);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            throw new CustomException(e.getMessage());
+        }
+
+    }
+
+    @Override
     public ResponseEntity<?> findAll(String ad_category_name) {
         try {
             List<AdsDetail> all = adsRepository.findAll(ad_category_name, false);
-            List<AdsDTO> adsDTOS = toDTOList(all);
-            return new ResponseEntity<>(adsDTOS, HttpStatus.OK);
+            return new ResponseEntity<>(toDTOList(all), HttpStatus.OK);
         } catch (Exception e) {
             e.printStackTrace();
             throw new CustomException(e.getMessage());
