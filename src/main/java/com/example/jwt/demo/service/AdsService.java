@@ -3,9 +3,11 @@ package com.example.jwt.demo.service;
 import com.example.jwt.demo.dto.AdsDTO;
 import org.springframework.http.ResponseEntity;
 
+import java.security.Principal;
+
 public interface AdsService {
 
-    ResponseEntity<?> save(AdsDTO adsDTO);
+    ResponseEntity<?> save(AdsDTO adsDTO, Principal principal);
 
     ResponseEntity<?> update(AdsDTO adsDTO);
 

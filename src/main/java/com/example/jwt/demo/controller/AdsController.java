@@ -6,6 +6,8 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
+
 @RestController
 @RequestMapping("/ads")
 @CrossOrigin
@@ -18,8 +20,8 @@ public class AdsController {
     }
 
     @PostMapping("save")
-    public ResponseEntity<?> save(@RequestBody AdsDTO adsDTO) {
-        return adsService.save(adsDTO);
+    public ResponseEntity<?> save(@RequestBody AdsDTO adsDTO, Principal principal) {
+        return adsService.save(adsDTO, principal);
     }
 
     @GetMapping("all")

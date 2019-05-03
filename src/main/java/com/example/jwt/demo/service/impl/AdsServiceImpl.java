@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -29,7 +30,7 @@ public class AdsServiceImpl implements AdsService {
     }
 
     @Override
-    public ResponseEntity<?> save(AdsDTO adsDTO) {
+    public ResponseEntity<?> save(AdsDTO adsDTO, Principal principal) {
         try {
             adsRepository.save(dTOToEntity(adsDTO));
             return new ResponseEntity<>(new ResponseModel(HttpStatus.OK.value(), "Ad Details Added", true), HttpStatus.OK);
