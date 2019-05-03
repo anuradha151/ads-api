@@ -3,6 +3,7 @@ package com.example.jwt.demo.service.impl;
 import com.example.jwt.demo.dto.AdsDTO;
 import com.example.jwt.demo.exception.CustomException;
 import com.example.jwt.demo.model.AdsDetail;
+import com.example.jwt.demo.model.AppUser;
 import com.example.jwt.demo.repository.AdsRepository;
 import com.example.jwt.demo.repository.UserRepository;
 import com.example.jwt.demo.service.AdsService;
@@ -35,8 +36,10 @@ public class AdsServiceImpl implements AdsService {
     @Override
     public ResponseEntity<?> save(AdsDTO adsDTO, Principal principal) {
         try {
-
-            adsRepository.save(dTOToEntity(adsDTO));
+            Optional<AppUser> byId = userRepository.findById(Integer.parseInt(principal.getName()));
+            AdsDetail adsDetail = dTOToEntity(adsDTO);
+            adsDetail.setAppUser(byId.get());
+            adsRepository.save(adsDetail);
             return new ResponseEntity<>(new ResponseModel(HttpStatus.OK.value(), "Ad Details Added", true), HttpStatus.OK);
         } catch (Exception e) {
             e.printStackTrace();
