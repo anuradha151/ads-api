@@ -1,202 +1,178 @@
-"2019-04-30 01:22:16 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 38384 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
-""2019-04-30 01:22:16 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
-""2019-04-30 01:22:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-""2019-04-30 01:22:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-""2019-04-30 01:22:18 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-""2019-04-30 01:22:18 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122ms. Found 2 repository interfaces.
-""2019-04-30 01:22:18 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$272c5d6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-""2019-04-30 01:22:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2019-04-30 01:22:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2019-04-30 01:22:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
-""2019-04-30 01:22:19 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
-""2019-04-30 01:22:19 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
-""2019-04-30 01:22:19 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2936 ms
-""2019-04-30 01:22:20 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2019-04-30 01:22:20 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2019-04-30 01:22:20 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+"2019-05-04 00:16:04 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 33156 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
+""2019-05-04 00:16:04 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
+""2019-05-04 00:16:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2019-05-04 00:16:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2019-05-04 00:16:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+""2019-05-04 00:16:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 235ms. Found 2 repository interfaces.
+""2019-05-04 00:16:08 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$38f0d2d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2019-05-04 00:16:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2019-05-04 00:16:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2019-05-04 00:16:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+""2019-05-04 00:16:09 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
+""2019-05-04 00:16:10 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
+""2019-05-04 00:16:10 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5665 ms
+""2019-05-04 00:16:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2019-05-04 00:16:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2019-05-04 00:16:11 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-""2019-04-30 01:22:20 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
-""2019-04-30 01:22:20 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-""2019-04-30 01:22:20 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-""2019-04-30 01:22:21 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2019-04-30 01:22:22 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:22:22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2019-04-30 01:22:23 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-""2019-04-30 01:22:23 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49df9b53, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ef7a295, org.springframework.security.web.header.HeaderWriterFilter@1bde164a, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@590c281a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f9cd929, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e238688, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44c71316, org.springframework.security.web.session.SessionManagementFilter@44b58502, org.springframework.security.web.access.ExceptionTranslationFilter@58072503, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f641e41]
-""2019-04-30 01:22:23 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-""2019-04-30 01:22:23 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:22:23 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2019-04-30 01:22:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
-""2019-04-30 01:22:23 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 8.197 seconds (JVM running for 16.145)
-""2019-04-30 01:28:03 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-""2019-04-30 01:28:03 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2019-04-30 01:28:04 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 148 ms
-""2019-04-30 01:35:50 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:35:50 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:35:50 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-""2019-04-30 01:35:50 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-""2019-04-30 01:36:08 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 23608 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
-""2019-04-30 01:36:08 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
-""2019-04-30 01:36:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-""2019-04-30 01:36:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-""2019-04-30 01:36:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-""2019-04-30 01:36:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102ms. Found 2 repository interfaces.
-""2019-04-30 01:36:11 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc010c80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-""2019-04-30 01:36:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2019-04-30 01:36:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2019-04-30 01:36:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
-""2019-04-30 01:36:11 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
-""2019-04-30 01:36:11 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
-""2019-04-30 01:36:11 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2671 ms
-""2019-04-30 01:36:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2019-04-30 01:36:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2019-04-30 01:36:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-""2019-04-30 01:36:12 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
-""2019-04-30 01:36:12 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-""2019-04-30 01:36:12 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-""2019-04-30 01:36:12 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2019-04-30 01:36:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:36:13 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2019-04-30 01:36:13 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-""2019-04-30 01:36:13 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44159d3c, org.springframework.security.web.context.SecurityContextPersistenceFilter@71bafafc, org.springframework.security.web.header.HeaderWriterFilter@69e351e2, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@24459f46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49c441dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@482636e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42d5d639, org.springframework.security.web.session.SessionManagementFilter@6b780068, org.springframework.security.web.access.ExceptionTranslationFilter@2c1da477, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5284791b]
-""2019-04-30 01:36:13 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-""2019-04-30 01:36:14 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:36:14 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2019-04-30 01:36:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
-""2019-04-30 01:36:14 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 6.409 seconds (JVM running for 8.508)
-""2019-04-30 01:36:32 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:36:32 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:36:32 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-""2019-04-30 01:36:32 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-""2019-04-30 01:39:29 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 38064 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
-""2019-04-30 01:39:30 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
-""2019-04-30 01:39:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-""2019-04-30 01:39:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-""2019-04-30 01:39:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-""2019-04-30 01:39:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 2 repository interfaces.
-""2019-04-30 01:39:31 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8a6d558] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-""2019-04-30 01:39:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2019-04-30 01:39:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2019-04-30 01:39:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
-""2019-04-30 01:39:31 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
-""2019-04-30 01:39:31 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
-""2019-04-30 01:39:31 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1578 ms
-""2019-04-30 01:39:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2019-04-30 01:39:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2019-04-30 01:39:31 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-""2019-04-30 01:39:31 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
-""2019-04-30 01:39:31 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-""2019-04-30 01:39:32 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-""2019-04-30 01:39:32 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2019-04-30 01:39:32 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:39:32 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2019-04-30 01:39:32 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-""2019-04-30 01:39:33 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ba2c4fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f02c628, org.springframework.security.web.header.HeaderWriterFilter@570d61ff, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@310a3fcd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@82c2a32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77a25eb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2099733c, org.springframework.security.web.session.SessionManagementFilter@36efc0f1, org.springframework.security.web.access.ExceptionTranslationFilter@42f8cec7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b01096]
-""2019-04-30 01:39:33 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-""2019-04-30 01:39:33 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:39:33 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2019-04-30 01:39:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
-""2019-04-30 01:39:33 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 3.949 seconds (JVM running for 5.145)
-""2019-04-30 01:45:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-""2019-04-30 01:45:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2019-04-30 01:45:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-""2019-04-30 01:46:37 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:46:37 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:46:37 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-""2019-04-30 01:46:37 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-""2019-04-30 01:46:45 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 39056 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
-""2019-04-30 01:46:45 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
-""2019-04-30 01:46:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-""2019-04-30 01:46:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-""2019-04-30 01:46:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-""2019-04-30 01:46:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59ms. Found 2 repository interfaces.
-""2019-04-30 01:46:47 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa238467] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-""2019-04-30 01:46:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2019-04-30 01:46:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2019-04-30 01:46:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
-""2019-04-30 01:46:47 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
-""2019-04-30 01:46:47 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
-""2019-04-30 01:46:47 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2168 ms
-""2019-04-30 01:46:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2019-04-30 01:46:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2019-04-30 01:46:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-""2019-04-30 01:46:47 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
-""2019-04-30 01:46:47 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-""2019-04-30 01:46:47 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-""2019-04-30 01:46:48 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2019-04-30 01:46:48 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:46:48 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2019-04-30 01:46:48 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-""2019-04-30 01:46:48 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bbca8e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bf81db2, org.springframework.security.web.header.HeaderWriterFilter@263e77ef, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@7aa0c0c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ca32174, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1308a119, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cb8b00a, org.springframework.security.web.session.SessionManagementFilter@9a09337, org.springframework.security.web.access.ExceptionTranslationFilter@22c98e42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@517ac863]
-""2019-04-30 01:46:49 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-""2019-04-30 01:46:49 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:46:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2019-04-30 01:46:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
-""2019-04-30 01:46:49 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 4.551 seconds (JVM running for 5.65)
-""2019-04-30 01:47:07 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-""2019-04-30 01:47:07 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2019-04-30 01:47:07 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-""2019-04-30 01:47:07 [http-nio-8080-exec-2] INFO  c.e.j.demo.controller.UserController - HIT - /user/save | payload : AppUserDTO{
+""2019-05-04 00:16:11 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+""2019-05-04 00:16:11 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2019-05-04 00:16:13 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+""2019-05-04 00:16:14 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+""2019-05-04 00:16:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2019-05-04 00:16:15 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2019-05-04 00:16:16 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2019-05-04 00:16:16 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1086871, org.springframework.security.web.context.SecurityContextPersistenceFilter@7574f6f9, org.springframework.security.web.header.HeaderWriterFilter@470361e1, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@7347aa6c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ff4c273, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fd62005, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e3e0f01, org.springframework.security.web.session.SessionManagementFilter@ca79af1, org.springframework.security.web.access.ExceptionTranslationFilter@12cb6099, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d1e993e]
+""2019-05-04 00:16:16 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+""2019-05-04 00:16:16 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2019-05-04 00:16:16 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2019-05-04 00:16:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
+""2019-05-04 00:16:17 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 14.382 seconds (JVM running for 17.191)
+""2019-05-04 00:18:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2019-05-04 00:18:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2019-05-04 00:18:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 86 ms
+""2019-05-04 00:18:41 [http-nio-8080-exec-1] INFO  c.e.j.demo.controller.UserController - HIT - /user/save | payload : AppUserDTO{
 user_id=0
 , user_name='Anuradha'
 , user_email='anuradha@gmail.com'
 , user_role='null'
 , refresh_token='null'
 }
-""2019-04-30 01:47:45 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:47:45 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:47:45 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-""2019-04-30 01:47:45 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-""2019-04-30 01:47:51 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 38612 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
-""2019-04-30 01:47:51 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
-""2019-04-30 01:47:51 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-""2019-04-30 01:47:51 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-""2019-04-30 01:47:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-""2019-04-30 01:47:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50ms. Found 2 repository interfaces.
-""2019-04-30 01:47:52 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66c3688d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-""2019-04-30 01:47:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-""2019-04-30 01:47:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-""2019-04-30 01:47:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
-""2019-04-30 01:47:53 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
-""2019-04-30 01:47:53 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
-""2019-04-30 01:47:53 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1515 ms
-""2019-04-30 01:47:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-""2019-04-30 01:47:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-""2019-04-30 01:47:53 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-""2019-04-30 01:47:53 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
-""2019-04-30 01:47:53 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-""2019-04-30 01:47:53 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-""2019-04-30 01:47:53 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-""2019-04-30 01:47:54 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:47:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-""2019-04-30 01:47:54 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-""2019-04-30 01:47:54 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46a8948d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f55eb16, org.springframework.security.web.header.HeaderWriterFilter@1c4f5038, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@672286ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56c79d78, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b63ac6b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4afd980a, org.springframework.security.web.session.SessionManagementFilter@3c2727b9, org.springframework.security.web.access.ExceptionTranslationFilter@479cb078, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6118ccb1]
-""2019-04-30 01:47:54 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-""2019-04-30 01:47:54 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:47:54 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-""2019-04-30 01:47:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
-""2019-04-30 01:47:55 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 3.89 seconds (JVM running for 5.065)
-""2019-04-30 01:48:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-""2019-04-30 01:48:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2019-04-30 01:48:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
-""2019-04-30 01:48:05 [http-nio-8080-exec-1] INFO  c.e.j.demo.controller.UserController - HIT - /user/save | payload : AppUserDTO{
+""2019-05-04 00:21:39 [http-nio-8080-exec-4] INFO  c.e.j.demo.controller.UserController - HIT - /user/login | payload : AppUserDTO{
 user_id=0
 , user_name='Anuradha'
 , user_email='anuradha@gmail.com'
 , user_role='null'
 , refresh_token='null'
 }
-""2019-04-30 01:48:38 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-""2019-04-30 01:48:38 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2019-04-30 01:48:38 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-""2019-04-30 01:48:38 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2019-05-04 00:26:33 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-05-04 00:26:33 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2019-05-04 00:26:33 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2019-05-04 00:26:33 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2019-05-04 00:26:48 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 37828 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
+""2019-05-04 00:26:48 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
+""2019-05-04 00:26:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2019-05-04 00:26:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2019-05-04 00:26:50 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+""2019-05-04 00:26:50 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87ms. Found 2 repository interfaces.
+""2019-05-04 00:26:50 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$328cca03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2019-05-04 00:26:50 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2019-05-04 00:26:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2019-05-04 00:26:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+""2019-05-04 00:26:51 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
+""2019-05-04 00:26:51 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
+""2019-05-04 00:26:51 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2186 ms
+""2019-05-04 00:26:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2019-05-04 00:26:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2019-05-04 00:26:51 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2019-05-04 00:26:51 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+""2019-05-04 00:26:51 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2019-05-04 00:26:52 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+""2019-05-04 00:26:52 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+""2019-05-04 00:26:53 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2019-05-04 00:26:53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2019-05-04 00:26:53 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2019-05-04 00:26:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46b4b73e, org.springframework.security.web.context.SecurityContextPersistenceFilter@39752cf2, org.springframework.security.web.header.HeaderWriterFilter@50975c48, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@51f7bc8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@566f87e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26e84868, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@139e5c3f, org.springframework.security.web.session.SessionManagementFilter@56a5d722, org.springframework.security.web.access.ExceptionTranslationFilter@3d6a9276, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31665cda]
+""2019-05-04 00:26:53 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+""2019-05-04 00:26:54 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2019-05-04 00:26:54 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2019-05-04 00:26:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
+""2019-05-04 00:26:54 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 6.11 seconds (JVM running for 9.93)
+""2019-05-04 00:31:44 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2019-05-04 00:31:44 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2019-05-04 00:31:44 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+""2019-05-04 00:31:44 [http-nio-8080-exec-2] INFO  c.e.j.demo.controller.UserController - HIT - /user/save | payload : AppUserDTO{
+user_id=0
+, user_name='null'
+, user_email='null'
+, user_role='null'
+, refresh_token='null'
+}
+""2019-05-04 00:31:44 [http-nio-8080-exec-2] WARN  o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolved [com.example.jwt.demo.exception.CustomException: must not be null 
+ No password provided. Password must be provided. 
+ Email required. Please provide an email 
+ ]
+""2019-05-04 00:33:05 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-05-04 00:33:05 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2019-05-04 00:33:05 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2019-05-04 00:33:05 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2019-05-04 00:33:10 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 36984 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
+""2019-05-04 00:33:10 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
+""2019-05-04 00:33:10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2019-05-04 00:33:10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2019-05-04 00:33:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+""2019-05-04 00:33:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55ms. Found 2 repository interfaces.
+""2019-05-04 00:33:12 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d29cb66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2019-05-04 00:33:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2019-05-04 00:33:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2019-05-04 00:33:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+""2019-05-04 00:33:12 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
+""2019-05-04 00:33:12 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
+""2019-05-04 00:33:12 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1910 ms
+""2019-05-04 00:33:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2019-05-04 00:33:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2019-05-04 00:33:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2019-05-04 00:33:13 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+""2019-05-04 00:33:13 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2019-05-04 00:33:13 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+""2019-05-04 00:33:13 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+""2019-05-04 00:33:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2019-05-04 00:33:13 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2019-05-04 00:33:14 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2019-05-04 00:33:14 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31febda7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c491403, org.springframework.security.web.header.HeaderWriterFilter@6ab215bf, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@726ae17d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@380ce1d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70f7d8c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a515601, org.springframework.security.web.session.SessionManagementFilter@2ba64451, org.springframework.security.web.access.ExceptionTranslationFilter@3624a16d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@568d99a2]
+""2019-05-04 00:33:14 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+""2019-05-04 00:33:14 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2019-05-04 00:33:14 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2019-05-04 00:33:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
+""2019-05-04 00:33:14 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 4.411 seconds (JVM running for 5.808)
+""2019-05-04 00:33:24 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2019-05-04 00:33:24 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2019-05-04 00:33:24 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+""2019-05-04 00:34:04 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-05-04 00:34:04 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2019-05-04 00:34:04 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2019-05-04 00:34:04 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2019-05-04 00:34:57 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Starting DemoApplication on DESKTOP-SCSK80E with PID 37720 (F:\Uziya\Wikunamu_backend\rest-api-jwt\target\classes started by Sameera in F:\Uziya\Wikunamu_backend\rest-api-jwt)
+""2019-05-04 00:34:57 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - No active profile set, falling back to default profiles: default
+""2019-05-04 00:34:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2019-05-04 00:34:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2019-05-04 00:34:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+""2019-05-04 00:34:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55ms. Found 2 repository interfaces.
+""2019-05-04 00:34:59 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11d27c67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2019-05-04 00:34:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+""2019-05-04 00:34:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2019-05-04 00:34:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+""2019-05-04 00:34:59 [restartedMain] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-10.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk-10.0.2;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Sameera\AppData\Local\Microsoft\WindowsApps;C:\Users\Sameera\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Sameera\AppData\Roaming\npm;C:\Users\Sameera\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sameera\AppData\Local\Yarn\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\WebStorm 2018.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;.]
+""2019-05-04 00:34:59 [restartedMain] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring embedded WebApplicationContext
+""2019-05-04 00:34:59 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1682 ms
+""2019-05-04 00:34:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2019-05-04 00:34:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2019-05-04 00:34:59 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2019-05-04 00:34:59 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+""2019-05-04 00:34:59 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2019-05-04 00:35:00 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+""2019-05-04 00:35:00 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+""2019-05-04 00:35:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2019-05-04 00:35:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2019-05-04 00:35:01 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2019-05-04 00:35:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24cc0c8f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2704e767, org.springframework.security.web.header.HeaderWriterFilter@24dbb02c, com.example.jwt.demo.jwt.JwtTokenAuthenticationFilter@1e878e90, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d03a3ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@259ea0d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@439fa1e, org.springframework.security.web.session.SessionManagementFilter@3f9cdad3, org.springframework.security.web.access.ExceptionTranslationFilter@39b46fd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37f5015d]
+""2019-05-04 00:35:01 [restartedMain] INFO  o.s.s.p.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+""2019-05-04 00:35:01 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2019-05-04 00:35:01 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2019-05-04 00:35:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api/wikunamu'
+""2019-05-04 00:35:01 [restartedMain] INFO  com.example.jwt.demo.DemoApplication - Started DemoApplication in 4.704 seconds (JVM running for 6.179)
+""2019-05-04 00:35:41 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/api/wikunamu] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2019-05-04 00:35:41 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2019-05-04 00:35:41 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+""2019-05-04 00:46:52 [Thread-8] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+""2019-05-04 00:46:52 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2019-05-04 00:46:52 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2019-05-04 00:46:52 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 "

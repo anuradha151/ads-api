@@ -22,10 +22,11 @@ public class AdsDetail {
     private String ad_user_email;
     private String ad_user_unique_id;
     private String ad_user_contact_no;
+    @Column(columnDefinition = "tinyint(1) default 1", nullable = false)
+    private boolean deleted;
 
     public AdsDetail() {
     }
-
 
 
     public String getAd_category_name() {
@@ -43,7 +44,6 @@ public class AdsDetail {
     public void setAd_item_name(String ad_item_name) {
         this.ad_item_name = ad_item_name;
     }
-
 
 
     public String getAd_title() {
@@ -124,5 +124,13 @@ public class AdsDetail {
 
     public void setAd_item_condition(String ad_item_condition) {
         this.ad_item_condition = ad_item_condition;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
     }
 }
