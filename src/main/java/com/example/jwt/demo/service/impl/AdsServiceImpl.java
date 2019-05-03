@@ -1,6 +1,7 @@
 package com.example.jwt.demo.service.impl;
 
 import com.example.jwt.demo.dto.AdsDTO;
+import com.example.jwt.demo.dto.AppUserDTO;
 import com.example.jwt.demo.exception.CustomException;
 import com.example.jwt.demo.model.AdsDetail;
 import com.example.jwt.demo.model.AppUser;
@@ -146,19 +147,26 @@ public class AdsServiceImpl implements AdsService {
 
     }
 
-    private AdsDTO entityToDTO(AdsDetail adsDTO) {
+    private AdsDTO entityToDTO(AdsDetail adsDetail) {
         try {
-            AdsDTO adsDetail = new AdsDTO();
-            adsDetail.setAd_detail_id(adsDTO.getAd_detail_id());
-            adsDetail.setAd_category_name(adsDTO.getAd_category_name());
-            adsDetail.setAd_item_name(adsDTO.getAd_item_name());
-            adsDetail.setAd_item_condition(adsDTO.getAd_item_condition());
-            adsDetail.setAd_title(adsDTO.getAd_title());
-            adsDetail.setAd_description(adsDTO.getAd_description());
-            adsDetail.setAd_city(adsDTO.getAd_city());
-            adsDetail.setAd_price(adsDTO.getAd_price());
-            adsDetail.setAd_image(adsDTO.getAd_image());
-            return adsDetail;
+            AdsDTO adsDTO = new AdsDTO();
+            adsDTO.setAd_detail_id(adsDetail.getAd_detail_id());
+            adsDTO.setAd_category_name(adsDetail.getAd_category_name());
+            adsDTO.setAd_item_name(adsDetail.getAd_item_name());
+            adsDTO.setAd_item_condition(adsDetail.getAd_item_condition());
+            adsDTO.setAd_title(adsDetail.getAd_title());
+            adsDTO.setAd_description(adsDetail.getAd_description());
+            adsDTO.setAd_city(adsDetail.getAd_city());
+            adsDTO.setAd_price(adsDetail.getAd_price());
+            adsDTO.setAd_image(adsDetail.getAd_image());
+            AppUser appUser = adsDetail.getAppUser();
+            AppUserDTO appUserDTO = new AppUserDTO();
+            appUserDTO.setUser_id(appUser.getUser_id());
+            appUserDTO.setUser_name(appUser.getUser_name());
+            appUserDTO.setUser_email(appUser.getUser_email());
+            appUserDTO.setContact_no(appUser.getContact_no());
+
+            return adsDTO;
         } catch (Exception e) {
             e.printStackTrace();
             throw new CustomException(e.getMessage());

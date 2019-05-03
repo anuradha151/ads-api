@@ -10,12 +10,11 @@ public class AdsDTO {
     private String ad_city;
     private double ad_price;
     private String ad_image;
-    private String ad_user_email;
-    private String ad_user_unique_id;
-    private String ad_user_contact_no;
+    private AppUserDTO appUserDTO;
 
     public AdsDTO() {
     }
+
 
     public String getAd_category_name() {
         return ad_category_name;
@@ -81,29 +80,6 @@ public class AdsDTO {
         this.ad_image = ad_image;
     }
 
-    public String getAd_user_email() {
-        return ad_user_email;
-    }
-
-    public void setAd_user_email(String ad_user_email) {
-        this.ad_user_email = ad_user_email;
-    }
-
-    public String getAd_user_unique_id() {
-        return ad_user_unique_id;
-    }
-
-    public void setAd_user_unique_id(String ad_user_unique_id) {
-        this.ad_user_unique_id = ad_user_unique_id;
-    }
-
-    public String getAd_user_contact_no() {
-        return ad_user_contact_no;
-    }
-
-    public void setAd_user_contact_no(String ad_user_contact_no) {
-        this.ad_user_contact_no = ad_user_contact_no;
-    }
 
     public int getAd_detail_id() {
         return ad_detail_id;
@@ -111,5 +87,13 @@ public class AdsDTO {
 
     public void setAd_detail_id(int ad_detail_id) {
         this.ad_detail_id = ad_detail_id;
+    }
+
+    public AppUserDTO getAppUserDTO() {
+        return appUserDTO;
+    }
+
+    public void setAppUserDTO(AppUserDTO appUserDTO) {
+        this.appUserDTO = appUserDTO;
     }
 }

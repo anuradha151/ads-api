@@ -1,18 +1,23 @@
 package com.example.jwt.demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+@JsonInclude(JsonInclude.Include.NON_DEFAULT)
 public class AppUserDTO {
+    @JsonInclude
     private int user_id;
+    @JsonInclude
     @NotNull
     @Size(min = 2, message = "Username should be has more than 2 characters")
     @Pattern(regexp = "^([A-Za-z0-9_\\s])*$", message = "Please input valid username")
     private String user_name;
+    @JsonInclude
     @NotNull(message = "Email required. Please provide an email")
 //    @Pattern(regexp = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$",message = "Please Input Valid Email To Continue")
     @Email(message = "Please input valid email address")
@@ -21,6 +26,8 @@ public class AppUserDTO {
     @Size(min = 5, message = "Password should have 6 characters at least")
     private String user_password;
     private String user_role;
+    @JsonInclude
+    private String contact_no;
     @JsonIgnore
     private String refresh_token;
 
@@ -43,9 +50,10 @@ public class AppUserDTO {
                 ", user_name='" + getUser_name() + '\'' + "\n" +
                 ", user_email='" + getUser_email() + '\'' + "\n" +
                 ", user_role='" + getUser_role() + '\'' + "\n" +
-                ", refresh_token='" + getRefresh_token() + '\'' + "\n" +
+                ", contact_no='" + getContact_no() + '\'' + "\n" +
                 '}';
     }
+
 
     public int getUser_id() {
         return user_id;
@@ -93,6 +101,14 @@ public class AppUserDTO {
 
     public void setRefresh_token(String refresh_token) {
         this.refresh_token = refresh_token;
+    }
+
+    public String getContact_no() {
+        return contact_no;
+    }
+
+    public void setContact_no(String contact_no) {
+        this.contact_no = contact_no;
     }
 }
 
