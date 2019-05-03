@@ -37,4 +37,10 @@ public class AdsController {
         return adsService.update(adsDTO);
     }
 
+    @DeleteMapping("remove")
+    public ResponseEntity<?> remove(@Param("id") int id) {
+        return adsService.remove(id);
+    }
+
+
 }
