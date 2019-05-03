@@ -155,6 +155,7 @@ public class AppUserServiceImpl implements AppUserService {
         appUser.setUser_password(bCryptPasswordEncoder.encode(appUserDTO.getUser_password()));
         appUser.setUser_role(UserRole.ADMIN.toString());
         appUser.setRefresh_token(appUserDTO.getRefresh_token());
+        appUser.setContact_no(appUserDTO.getContact_no());
         return appUser;
     }
 
@@ -164,6 +165,7 @@ public class AppUserServiceImpl implements AppUserService {
         appUserDTO.setUser_email(appUser.getUser_email());
         appUserDTO.setUser_role(appUser.getUser_role());
         appUserDTO.setRefresh_token(appUser.getRefresh_token());
+        appUserDTO.setContact_no(appUser.getContact_no());
         return appUserDTO;
     }
 
