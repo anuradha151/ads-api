@@ -136,14 +136,13 @@ public class AppUserServiceImpl implements AppUserService {
     private String createJwtWithoutPrefix(AppUser appUser) {
         List<SimpleGrantedAuthority> grantedAuthorities = new ArrayList<>();
         grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_" + appUser.getUser_role()));
-        String accessToken = JwtGenerator.generateAccessJWT(appUser.getUser_name(), appUser.getUser_email(), grantedAuthorities, ApiParameters.JWT_EXPIRATION, ApiParameters.JWT_SECRET);
-        return accessToken;
+        return JwtGenerator.generateAccessJWT(Integer.toString(appUser.getUser_id()), appUser.getUser_email(), grantedAuthorities, ApiParameters.JWT_EXPIRATION, ApiParameters.JWT_SECRET);
     }
 
     private String createRefreshToken(AppUser appUser) {
         List<SimpleGrantedAuthority> grantedAuthorityList = new ArrayList<>();
         grantedAuthorityList.add(new SimpleGrantedAuthority("ROLE_" + appUser.getUser_role()));
-        String refreshToken = JwtGenerator.generateRefreshToken(appUser.getUser_name(), appUser.getUser_email(), grantedAuthorityList, ApiParameters.REFRESH_TOKEN_EXPIRATION, ApiParameters.JWT_SECRET);
+        String refreshToken = JwtGenerator.generateRefreshToken(Integer.toString(appUser.getUser_id()), appUser.getUser_email(), grantedAuthorityList, ApiParameters.REFRESH_TOKEN_EXPIRATION, ApiParameters.JWT_SECRET);
         userRepository.updateRefreshToken(appUser.getUser_email(), refreshToken);
         return refreshToken;
     }

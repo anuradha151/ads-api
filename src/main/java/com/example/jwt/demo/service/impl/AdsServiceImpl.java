@@ -4,6 +4,7 @@ import com.example.jwt.demo.dto.AdsDTO;
 import com.example.jwt.demo.exception.CustomException;
 import com.example.jwt.demo.model.AdsDetail;
 import com.example.jwt.demo.repository.AdsRepository;
+import com.example.jwt.demo.repository.UserRepository;
 import com.example.jwt.demo.service.AdsService;
 import com.example.jwt.demo.util.ErrorResponse;
 import com.example.jwt.demo.util.ResponseModel;
@@ -24,14 +25,17 @@ public class AdsServiceImpl implements AdsService {
     private static final Logger LOGGER = LoggerFactory.getLogger(AdsServiceImpl.class);
 
     private final AdsRepository adsRepository;
+    private final UserRepository userRepository;
 
-    public AdsServiceImpl(AdsRepository adsRepository) {
+    public AdsServiceImpl(AdsRepository adsRepository, UserRepository userRepository) {
         this.adsRepository = adsRepository;
+        this.userRepository = userRepository;
     }
 
     @Override
     public ResponseEntity<?> save(AdsDTO adsDTO, Principal principal) {
         try {
+
             adsRepository.save(dTOToEntity(adsDTO));
             return new ResponseEntity<>(new ResponseModel(HttpStatus.OK.value(), "Ad Details Added", true), HttpStatus.OK);
         } catch (Exception e) {
