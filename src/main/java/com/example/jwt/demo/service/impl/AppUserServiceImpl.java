@@ -1,6 +1,6 @@
 package com.example.jwt.demo.service.impl;
 
-import com.example.jwt.demo.configuration.ApiParameters;
+import com.example.jwt.demo.configuration.JWTParameter;
 import com.example.jwt.demo.dto.AppUserDTO;
 import com.example.jwt.demo.exception.CustomException;
 import com.example.jwt.demo.jwt.JwtGenerator;
@@ -118,13 +118,11 @@ public class AppUserServiceImpl implements AppUserService {
     }
 
     @Override
-    public ResponseEntity<?> getRefreshToken(String refresh_token) {
+    public ResponseEntity<?> refreshToken(String refresh_token) {
         try {
             Optional<AppUser> byRefreshToken = userRepository.findByRefreshToken(refresh_token);
-
-
             if (!byRefreshToken.isPresent()) {
-                return new ResponseEntity<>("Invalid refresh_token", HttpStatus.UNAUTHORIZED);
+                return new ResponseEntity<>("Not a existing token", HttpStatus.UNAUTHORIZED);
             }
             AuthToken authToken = createAuthToken(createJwtWithoutPrefix(byRefreshToken.get()), createRefreshToken(byRefreshToken.get()));
             return new ResponseEntity<>(authToken, HttpStatus.OK);
@@ -136,13 +134,13 @@ public class AppUserServiceImpl implements AppUserService {
     private String createJwtWithoutPrefix(AppUser appUser) {
         List<SimpleGrantedAuthority> grantedAuthorities = new ArrayList<>();
         grantedAuthorities.add(new SimpleGrantedAuthority("ROLE_" + appUser.getUser_role()));
-        return JwtGenerator.generateAccessJWT(Integer.toString(appUser.getUser_id()), appUser.getUser_email(), grantedAuthorities, ApiParameters.JWT_EXPIRATION, ApiParameters.JWT_SECRET);
+        return JwtGenerator.generateAccessJWT(Integer.toString(appUser.getUser_id()), appUser.getUser_email(), grantedAuthorities, JWTParameter.ACCESS_TOKEN_EXPIRATION, JWTParameter.JWT_SECRET);
     }
 
     private String createRefreshToken(AppUser appUser) {
         List<SimpleGrantedAuthority> grantedAuthorityList = new ArrayList<>();
         grantedAuthorityList.add(new SimpleGrantedAuthority("ROLE_" + appUser.getUser_role()));
-        String refreshToken = JwtGenerator.generateRefreshToken(Integer.toString(appUser.getUser_id()), appUser.getUser_email(), grantedAuthorityList, ApiParameters.REFRESH_TOKEN_EXPIRATION, ApiParameters.JWT_SECRET);
+        String refreshToken = JwtGenerator.generateRefreshToken(Integer.toString(appUser.getUser_id()), appUser.getUser_email(), grantedAuthorityList, JWTParameter.REFRESH_TOKEN_EXPIRATION, JWTParameter.JWT_SECRET);
         userRepository.updateRefreshToken(appUser.getUser_email(), refreshToken);
         return refreshToken;
     }

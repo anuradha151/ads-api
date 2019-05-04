@@ -16,7 +16,7 @@ public class JwtAuthenticationConfig {
     @Value("${jwt.expiration}")
     private int expiration; // default 8 hours
 
-    @Value(ApiParameters.JWT_SECRET)
+    @Value(JWTParameter.JWT_SECRET)
     private String secret;
 
     public String getUrl() {

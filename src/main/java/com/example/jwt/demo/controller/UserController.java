@@ -69,10 +69,10 @@ public class UserController {
         return appUserService.loginUser(appUserDTO);
     }
 
-    @PostMapping("/getAccessToken")
-    public ResponseEntity<?> getaccesstoken(@RequestBody AuthToken token) {
-        LOGGER.info("HIT - /user/getAccessToken");
-        return appUserService.getRefreshToken(token.getRefresh_token());
+    @PostMapping("/refresh_token")
+    public ResponseEntity<?> getAccessToken(@RequestBody AuthToken token) {
+        LOGGER.info("HIT - /user/refresh_token");
+        return appUserService.refreshToken(token.getRefresh_token());
     }
 
 }
